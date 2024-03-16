@@ -1,17 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>IC Hello Starter</title>
-  <base href="/" />
-  <link rel="icon" href="/favicon.ico" />
-</head>
-
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
-
+<html>
+  <head>
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="src/index.scss">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Create</a></li>
+          <li><a href="#">My NFTs</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="featured-nfts">
+        <h2>Featured NFTs</h2>
+        <ul>
+          <li>
+            <img src="public/nft1.jpg" alt="Near x Nvidia">
+            <h3>Near x Nvidia</h3>
+            <p>$100.00</p>
+          </li>
+          <li>
+            <img src="public/nft2.jpg" alt="Near x Nvidia">
+            <h3>Near x Nvidia</h3>
+            <p>Not Listed</p>
+          </li>
+          <li>
+            <img src="public/nft3.jpg" alt="Near x Nvidia">
+            <h3>Near x Nvidia</h3>
+            <p>$Not Listed</p>
+          </li>
+        </ul>
+      </section>
+      <section id="trending-nfts">
+        <h2>Trending NFTs</h2>
+        <ul>
+          <li>
+            <img src="public/nft4.jpg" alt="NEAR x NVIDIA">
+            <h3>NEAR x NVIDIA</h3>
+            <p>Not Listed</p>
+          </li>
+          <li>
+            <img src="public/nft5.jpg" alt="Polyhedra 2024">
+            <h3>Polyhedra 2024</h3>
+            <p>$500.00</p>
+          </li>
+          <li>
+            <img src="public/nft6.jpg" alt="Hitman's Zenbook">
+            <h3>Hitman's Zenbook</h3>
+            <p>$600.00</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 NFT Marketplace</p>
+    </footer>
+  </body>
 </html>

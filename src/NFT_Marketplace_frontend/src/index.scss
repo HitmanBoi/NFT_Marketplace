@@ -1,37 +1,97 @@
+/* Reset some styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set some basic styles for the body */
 body {
-  font-family: sans-serif;
-  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
 }
 
-img {
-  max-width: 50vw;
-  max-height: 25vw;
-  display: block;
-  margin: auto;
-}
-
-form {
+/* Style the header */
+header {
+  background-color: #FF6B81;
+  padding: 20px;
   display: flex;
-  justify-content: center;
-  gap: 0.5em;
-  flex-flow: row wrap;
-  max-width: 40vw;
-  margin: auto;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
 }
 
-button[type="submit"] {
-  padding: 5px 20px;
-  margin: 10px auto;
-  float: right;
+nav ul {
+  display: flex;
+  list-style: none;
 }
 
-#greeting {
-  margin: 10px auto;
-  padding: 10px 60px;
-  border: 1px solid #222;
+nav li {
+  margin-right: 20px;
 }
 
-#greeting:empty {
-  display: none;
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Style the main section */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+section {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+section h2 {
+  color: #FF6B81;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+section li {
+  flex-basis: calc(33.33% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color:#F5F5F5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+section li img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+section li h3 {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+section li p {
+  color: #FF6B81;
+  font-weight: bold;
+}
+
+/* Style the footer */
+footer {
+  background-color: #2E7D32;
+  padding: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 20px;
 }
